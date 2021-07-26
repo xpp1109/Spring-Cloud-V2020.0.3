@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.xpp</groupId>
-        <artifactId>spring-cloud-v2020003</artifactId>
+        <artifactId>spring-cloud-v202003</artifactId>
         <version>1.0.0</version>
     </parent>
     <artifactId>discovery</artifactId>
@@ -47,7 +47,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <imageName>docker.io/shizhenchao/spring-cloud-v202003-${project.artifactId}:${project.version}</imageName>
+                    <imageName>docker.io/shizhenchao/${project.parent.artifactId}-${project.artifactId}:${project.version}</imageName>
                 </configuration>
             </plugin>
         </plugins>
