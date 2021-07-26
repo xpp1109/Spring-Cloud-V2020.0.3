@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
     <groupId>org.xpp</groupId>
-    <artifactId>Spring-Cloud-V2020.0.3</artifactId>
+    <artifactId>spring-cloud-v2020003</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
     <description>Spring Cloud V2020.0.3 学习笔记</description>
