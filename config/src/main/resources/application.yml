@@ -7,8 +7,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/xpp1109/spring-cloud-v202003.git
-          basedir: config-repo
+          uri: https://github.com/xpp1109/spring-cloud-v202003-config-repo.git
+          basedir:
           password:
           username:
           default-label: main
