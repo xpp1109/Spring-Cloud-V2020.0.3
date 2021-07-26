@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: client1
+server:
+  port: 8001
+eureka:
+  client:
+    service-url:
+      defaultZone: "${DISCOVERY_URL:http://xpp:xpp@localhost:8761/eureka}"
