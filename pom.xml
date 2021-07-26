@@ -23,6 +23,8 @@
     </properties>
     <modules>
         <module>discovery</module>
+        <module>client1</module>
+        <module>config</module>
     </modules>
     <dependencies>
         <dependency>

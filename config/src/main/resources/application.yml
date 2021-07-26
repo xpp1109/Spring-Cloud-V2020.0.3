@@ -7,7 +7,10 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/xpp1109/spring-cloud-v202003.git
+          basedir: config-repo
+          password:
+          username:
 eureka:
   client:
     service-url:

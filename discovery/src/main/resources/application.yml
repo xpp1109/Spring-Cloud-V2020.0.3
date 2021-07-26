@@ -15,8 +15,3 @@ spring:
     user:
       name: xpp
       password: xpp
-  mail:
-    host: smtp.163.com
-    username: 18516950475@163.com
-    password: xpp@1224
-    port: 465
