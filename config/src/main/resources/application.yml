@@ -1,5 +1,5 @@
 server:
-  port: 7000
+  port: 8888
 spring:
   application:
     name: config
@@ -11,6 +11,7 @@ spring:
           basedir: config-repo
           password:
           username:
+          default-label: main
 eureka:
   client:
     service-url:

@@ -1,6 +1,11 @@
 spring:
   application:
     name: client1
+  cloud:
+    config:
+      uri: "${CONFIG_URL:http://xpp:xpp@localhost:8888}"
+      discovery:
+        service-id: ${spring.application.name}
 server:
   port: 8001
 eureka:
