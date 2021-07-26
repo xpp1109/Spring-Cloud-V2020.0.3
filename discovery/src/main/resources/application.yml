@@ -1,0 +1,22 @@
+server:
+  port: 8761
+eureka:
+  client:
+    service-url:
+      # 支持配置通过DISCOVERY_URL传递
+      defaultZone: ${DISCOVERY_URL:http://localhost:8761}/eureka
+    fetch-registry: true
+    register-with-eureka: true
+spring:
+  application:
+    name: discovery
+  #Security用户密码配置
+  security:
+    user:
+      name: xpp
+      password: xpp
+  mail:
+    host: smtp.163.com
+    username: 18516950475@163.com
+    password: xpp@1224
+    port: 465
