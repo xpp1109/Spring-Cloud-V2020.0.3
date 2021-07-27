@@ -1,14 +1,22 @@
 spring:
   application:
     name: client1
+#  config:
+#    import: optional:configserver:http://localhost:8888
   cloud:
     config:
-      uri: "${CONFIG_URL:http://xpp:xpp@localhost:8888}"
+      enabled: true
       discovery:
-        service-id: ${spring.application.name}
+        service-id: client1
+      username: xpp
+      password: xpp
 server:
   port: 8001
 eureka:
   client:
     service-url:
       defaultZone: "${DISCOVERY_URL:http://xpp:xpp@localhost:8761/eureka}"
+  instance:
+    metadata-map:
+      user: xpp
+      password: xpp

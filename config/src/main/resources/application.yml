@@ -8,11 +8,29 @@ spring:
       server:
         git:
           uri: https://github.com/xpp1109/spring-cloud-v202003-config-repo.git
-          basedir:
-          password:
-          username:
           default-label: main
+        bootstrap: true
+  security:
+    user:
+      name: xpp
+      password: xpp
+  kafka:
+    bootstrap-servers:
+      - linux1:9092
+      - linux2:9092
+      - linux3:9092
 eureka:
   client:
     service-url:
       defaultZone: "${DISCOVERY_URL:http://xpp:xpp@localhost:8761/eureka}"
+encrypt:
+  keyStore:
+    password: letmein
+    alias: mytestkey
+    secret: changeme
+    location: server.jks
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
