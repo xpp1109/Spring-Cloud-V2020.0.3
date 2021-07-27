@@ -1,11 +1,11 @@
 spring:
   application:
-    name: client1
+    name: client2
   cloud:
     config:
       enabled: true
       discovery:
-        service-id: client1
+        service-id: client2
       username: xpp
       password: xpp
   kafka:
@@ -14,7 +14,7 @@ spring:
       - linux2:9092
       - linux3:9092
 server:
-  port: 8001
+  port: 8002
 eureka:
   client:
     service-url:

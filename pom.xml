@@ -20,11 +20,14 @@
         <maven.compiler.target>16</maven.compiler.target>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
         <spring-boot.version>2.5.3</spring-boot.version>
+        <spring-boot-admin.version>2.4.3</spring-boot-admin.version>
     </properties>
     <modules>
         <module>discovery</module>
         <module>client1</module>
         <module>config</module>
+        <module>admin</module>
+        <module>client2</module>
     </modules>
     <dependencies>
         <dependency>

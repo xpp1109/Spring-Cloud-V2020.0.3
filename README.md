@@ -10,3 +10,6 @@ keytool -genkeypair -alias mytestkey -keyalg RSA \
   -keypass changeme -keystore server.jks -storepass letmein
 ```
 
+> ## Spring Boot Admin  
+
+https://codecentric.github.io/spring-boot-admin/current/

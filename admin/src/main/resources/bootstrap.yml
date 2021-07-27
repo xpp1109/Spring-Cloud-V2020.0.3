@@ -1,20 +1,20 @@
 spring:
   application:
-    name: client1
-  cloud:
-    config:
-      enabled: true
-      discovery:
-        service-id: client1
-      username: xpp
-      password: xpp
+    name: admin
   kafka:
     bootstrap-servers:
       - linux1:9092
       - linux2:9092
       - linux3:9092
+  cloud:
+    config:
+      enabled: true
+      discovery:
+        service-id: admin
+      username: xpp
+      password: xpp
 server:
-  port: 8001
+  port: 7000
 eureka:
   client:
     service-url:
