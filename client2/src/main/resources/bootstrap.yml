@@ -31,6 +31,3 @@ management:
   endpoint:
     health:
       show-details: always
-feign:
-  circuitbreaker:
-    enabled: true
